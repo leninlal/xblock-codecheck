@@ -1,0 +1,9 @@
+/* CSS for CodecheckXBlock */
+
+.codecheck_block .count {
+    font-weight: bold;
+}
+
+.codecheck_block p {
+    cursor: pointer;
+}
