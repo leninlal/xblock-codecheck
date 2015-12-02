@@ -19,7 +19,7 @@ function CodecheckXBlock(runtime, element) {
 
         $('.xblock-editor-error-message', element).html();
         $('.xblock-editor-error-message', element).css('display', 'none');
-        var handlerUrl = runtime.handlerUrl(element, 'save_pdf');
+        var handlerUrl = runtime.handlerUrl(element, 'save_code');
         $.post(handlerUrl, JSON.stringify(data)).done(function(response) {
             if (response.result === 'success') {
                 window.location.reload(false);

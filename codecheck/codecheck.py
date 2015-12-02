@@ -45,7 +45,7 @@ class CodecheckXBlock(XBlock):
                           help="content")
  
 
-    display_name = String(display_name="Display Name",
+    display_name = String(display_name="codecheck",
                           default="Display name",
                           scope=Scope.settings,
                           help="Name of the component in the edxplatform")
