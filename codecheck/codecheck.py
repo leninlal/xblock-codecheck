@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class CodecheckXBlock(XBlock):n url
+class CodecheckXBlock(XBlock):
     href = String(display_name="href",
                   default="http://codecheck.it/codecheck/files?repo=bj4cc&problem=ch02/c02_exp_2_102",
                   scope=Scope.settings,
@@ -74,7 +74,7 @@ class CodecheckXBlock(XBlock):n url
         """
         html = self.resource_string("static/html/code_edit.html")
         frag = Fragment(html.format(self=self))
-        frag.add_javascript(self.resource_string("static/js/src/code_edit.js"))
+        frag.add_javascript(self.resource_string("static/js/src/code.js"))
         frag.initialize_js('CodecheckXBlock')
         return frag
 
